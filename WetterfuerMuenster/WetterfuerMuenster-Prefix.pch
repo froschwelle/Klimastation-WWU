@@ -12,7 +12,7 @@
     #import <UIKit/UIKit.h>
     #import <Foundation/Foundation.h>
     #import <QuartzCore/QuartzCore.h>
-    #import <CorePlot-CocoaTouch.h>
+    #import "CorePlot-CocoaTouch.h"
 #define IS_FIRST_START (![[[NSUserDefaults standardUserDefaults] objectForKey:@"firstStart"] boolValue])
 #define SET_FIRST_START_IS_OVER [[NSUserDefaults standardUserDefaults] setObject:[NSNumber numberWithBool:YES] forKey:@"firstStart"]
 #endif
