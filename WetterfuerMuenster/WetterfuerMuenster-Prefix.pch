@@ -1,0 +1,18 @@
+//
+// Prefix header for all source files of the 'WetterfuerMuenster' target in the 'WetterfuerMuenster' project
+//
+
+#import <Availability.h>
+
+#ifndef __IPHONE_5_0
+#warning "This project uses features only available in iOS SDK 5.0 and later."
+#endif
+
+#ifdef __OBJC__
+    #import <UIKit/UIKit.h>
+    #import <Foundation/Foundation.h>
+    #import <QuartzCore/QuartzCore.h>
+    #import <CorePlot-CocoaTouch.h>
+#define IS_FIRST_START (![[[NSUserDefaults standardUserDefaults] objectForKey:@"firstStart"] boolValue])
+#define SET_FIRST_START_IS_OVER [[NSUserDefaults standardUserDefaults] setObject:[NSNumber numberWithBool:YES] forKey:@"firstStart"]
+#endif
