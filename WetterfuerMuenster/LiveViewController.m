@@ -43,7 +43,12 @@
     
     NSString *wetterCodeinQuelltext;
     NSString *wetterCode;
+    
+    
+    
+    
 
+    
     NSURL *url = [NSURL URLWithString:@"http://www.uni-muenster.de/Klima/wetter/wetter.php"];
     NSString *content = [NSString stringWithContentsOfURL:url encoding:NSUTF8StringEncoding error:NULL];
     
@@ -54,12 +59,38 @@
     }
     else
     {
+        
+        int *width = 61;
+        int *length = 1;
+        NSString *scanner;
+        //NSString *stop = @"<";
+        //int yesNo = 0;
+        
+        
         quelltext = [content componentsSeparatedByString:@"\n"];
         tempInQuelltext = quelltext[203];
         temp = [tempInQuelltext substringWithRange:NSMakeRange(54, 6)];
         self.tempLabel.text = temp;
+        
+        
+        
         wetterCodeinQuelltext = quelltext[254];
-        //wetterCode = [wetterCodeinQuelltext substringWithRange:NSMakeRange(<#NSUInteger loc#>, <#NSUInteger len#>)
+        
+        //scanner = [wetterCodeinQuelltext substringWithRange:NSMakeRange(width, length)];
+        scanner = [wetterCodeinQuelltext substringWithRange:NSMakeRange(width, length)];
+        
+        NSLog(@"%@",scanner);
+        
+        
+        
+        
+        wetterCode = [wetterCodeinQuelltext substringWithRange:NSMakeRange(54, 7)];
+        
+        //wetterCode = [wetterCodeinQuelltext substringWithRange:NSMakeRange(54, length)];
+        
+        self.codeLabel.text = wetterCode;
+        
+        
     }
 }
 

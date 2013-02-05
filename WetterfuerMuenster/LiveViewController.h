@@ -10,6 +10,7 @@
 
 @interface LiveViewController : UIViewController //<UIAlertViewDelegate>
 @property (strong, nonatomic) IBOutlet UILabel *tempLabel;
+@property (strong, nonatomic) IBOutlet UILabel *codeLabel;
 - (IBAction)refresh:(id)sender;
 
 @end

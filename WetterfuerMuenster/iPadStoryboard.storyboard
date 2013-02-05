@@ -621,7 +621,7 @@
                         <rect key="frame" x="0.0" y="64" width="768" height="911"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="center" image="TableViewBackground@2x.png" id="QnI-6u-kGU">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="TableViewBackground@2x.png" id="QnI-6u-kGU">
                                 <rect key="frame" x="0.0" y="0.0" width="768" height="911"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
@@ -686,7 +686,7 @@
                         <rect key="frame" x="0.0" y="64" width="768" height="911"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="center" image="TableViewBackground@2x.png" id="K6x-og-7aP">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="TableViewBackground@2x.png" id="K6x-og-7aP">
                                 <rect key="frame" x="0.0" y="0.0" width="768" height="911"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                             </imageView>
@@ -745,7 +745,7 @@
                         <rect key="frame" x="0.0" y="64" width="768" height="911"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="center" image="TableViewBackground@2x.png" id="JBj-45-YJP">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="TableViewBackground@2x.png" id="JBj-45-YJP">
                                 <rect key="frame" x="0.0" y="0.0" width="768" height="911"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
