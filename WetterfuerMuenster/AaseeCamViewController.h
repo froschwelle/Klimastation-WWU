@@ -8,9 +8,17 @@
 
 #import <UIKit/UIKit.h>
 
-@interface AaseeCamViewController : UIViewController
+@interface AaseeCamViewController : UIViewController {
+    NSTimer *timer;
+}
+
 @property (strong, nonatomic) IBOutlet UIWebView *web;
+
+@property (nonatomic, strong) NSURL *werbungurl;
 - (IBAction)savePicture:(id)sender;
 - (IBAction)refresh:(id)sender;
+- (IBAction)werbung1:(id)sender;
+- (IBAction)werbung2:(id)sender;
+@property (strong, nonatomic) IBOutlet UIWebView *werbung;
 
 @end

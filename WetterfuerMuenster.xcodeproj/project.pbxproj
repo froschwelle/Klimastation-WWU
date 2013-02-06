@@ -11,6 +11,7 @@
 		54A335CC16BFB7E800544C8C /* CreditsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 54A335CB16BFB7E800544C8C /* CreditsViewController.m */; };
 		54A335CF16BFDF3700544C8C /* logo-rgb-ifgi-text-en.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 54A335CD16BFDF3700544C8C /* logo-rgb-ifgi-text-en.jpg */; };
 		54A335D016BFDF3700544C8C /* wwu_logo_ohne_text.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 54A335CE16BFDF3700544C8C /* wwu_logo_ohne_text.jpg */; };
+		54E69E0616C2AD9D0020BDB9 /* ifgi.png in Resources */ = {isa = PBXBuildFile; fileRef = 54E69E0516C2AD9D0020BDB9 /* ifgi.png */; };
 		54F6ACCE16BE856A00A092E7 /* ifgilogo.gif in Resources */ = {isa = PBXBuildFile; fileRef = 54F6ACCC16BE856A00A092E7 /* ifgilogo.gif */; };
 		54F6ACCF16BE856A00A092E7 /* wwu_logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 54F6ACCD16BE856A00A092E7 /* wwu_logo.png */; };
 		A30D04DE16B029450080C884 /* archiv.png in Resources */ = {isa = PBXBuildFile; fileRef = A30D04D516B029450080C884 /* archiv.png */; };
@@ -155,6 +156,7 @@
 		54A335CB16BFB7E800544C8C /* CreditsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CreditsViewController.m; sourceTree = "<group>"; };
 		54A335CD16BFDF3700544C8C /* logo-rgb-ifgi-text-en.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "logo-rgb-ifgi-text-en.jpg"; sourceTree = "<group>"; };
 		54A335CE16BFDF3700544C8C /* wwu_logo_ohne_text.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = wwu_logo_ohne_text.jpg; sourceTree = "<group>"; };
+		54E69E0516C2AD9D0020BDB9 /* ifgi.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ifgi.png; sourceTree = "<group>"; };
 		54F6ACCC16BE856A00A092E7 /* ifgilogo.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = ifgilogo.gif; sourceTree = "<group>"; };
 		54F6ACCD16BE856A00A092E7 /* wwu_logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = wwu_logo.png; sourceTree = "<group>"; };
 		A30D04D516B029450080C884 /* archiv.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = archiv.png; sourceTree = "<group>"; };
@@ -430,6 +432,7 @@
 		A3D2251D16AEB92F00F918F0 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				54E69E0516C2AD9D0020BDB9 /* ifgi.png */,
 				54F6ACCC16BE856A00A092E7 /* ifgilogo.gif */,
 				54F6ACCD16BE856A00A092E7 /* wwu_logo.png */,
 				54A335CD16BFDF3700544C8C /* logo-rgb-ifgi-text-en.jpg */,
@@ -563,6 +566,7 @@
 				54F6ACCF16BE856A00A092E7 /* wwu_logo.png in Resources */,
 				54A335CF16BFDF3700544C8C /* logo-rgb-ifgi-text-en.jpg in Resources */,
 				54A335D016BFDF3700544C8C /* wwu_logo_ohne_text.jpg in Resources */,
+				54E69E0616C2AD9D0020BDB9 /* ifgi.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

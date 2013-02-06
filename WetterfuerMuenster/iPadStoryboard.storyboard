@@ -1072,8 +1072,8 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="logo-rgb-ifgi-text-en.jpg" id="0q3-8R-jQf">
-                                <rect key="frame" x="41" y="833" width="267" height="86"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="ifgi.png" id="0q3-8R-jQf">
+                                <rect key="frame" x="31" y="665" width="267" height="86"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                             </imageView>
@@ -1116,7 +1116,7 @@
         <image name="TableViewBackground@2x.png" width="1024" height="1024"/>
         <image name="UIBarButtonItem@2x.png" width="176" height="88"/>
         <image name="Webcam-1.png" width="23" height="30"/>
-        <image name="logo-rgb-ifgi-text-en.jpg" width="406" height="145"/>
+        <image name="ifgi.png" width="410" height="150"/>
     </resources>
     <classes>
         <class className="CreditsViewController" superclassName="UIViewController">
@@ -1203,6 +1203,9 @@
         </class>
         <class className="WSGraphViewController" superclassName="UIViewController">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/WSGraphViewController.h"/>
+            <relationships>
+                <relationship kind="action" name="doneButtonPressed:"/>
+            </relationships>
         </class>
     </classes>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">

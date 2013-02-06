@@ -147,13 +147,14 @@
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="-2 C°" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="U3C-Rx-DPK">
-                                <rect key="frame" x="20" y="141" width="280" height="116"/>
+                                <rect key="frame" x="0.0" y="106" width="320" height="86"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="90"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
+                                <color key="shadowColor" white="0.0" alpha="0.45000000000000001" colorSpace="calibratedWhite"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="Lvh-Ut-VUS">
-                                <rect key="frame" x="86" y="328" width="149" height="72"/>
+                                <rect key="frame" x="86" y="334" width="149" height="72"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
                                 <state key="normal" title="Aktualisieren" image="UIBarButtonItem@2x.png">
@@ -167,22 +168,23 @@
                                     <action selector="refresh:" destination="4ev-48-cot" eventType="touchUpInside" id="NgK-Om-37P"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Münster" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="5gW-KL-rkj">
-                                <rect key="frame" x="93" y="48" width="134" height="48"/>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Münster" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="5gW-KL-rkj">
+                                <rect key="frame" x="0.0" y="20" width="320" height="48"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="35"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
+                                <color key="shadowColor" white="0.0" alpha="0.45000000000000001" colorSpace="calibratedWhite"/>
                             </label>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Code" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="hSQ-rg-aac">
-                                <rect key="frame" x="97" y="265" width="126" height="38"/>
+                                <rect key="frame" x="0.0" y="214" width="320" height="38"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="26"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Aktuallisieren" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="UsQ-sE-50o">
-                                <rect key="frame" x="109" y="359" width="102" height="21"/>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Aktualisieren" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="UsQ-sE-50o">
+                                <rect key="frame" x="109" y="365" width="102" height="22"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
@@ -205,12 +207,22 @@
                                     <segue destination="kQY-ik-42x" kind="modal" modalTransitionStyle="coverVertical" id="vk0-WN-psf"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="code1" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="c19-D5-dhu">
+                                <rect key="frame" x="0.0" y="277" width="320" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="21"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                                <color key="shadowColor" white="0.0" alpha="0.45000000000000001" colorSpace="calibratedWhite"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" red="0.40000000596046448" green="1" blue="0.40000000596046448" alpha="1" colorSpace="calibratedRGB"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Live" image="Live.png" id="vLa-MP-7Zt"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
                     <connections>
                         <outlet property="codeLabel" destination="hSQ-rg-aac" id="4h5-Wg-ndq"/>
+                        <outlet property="codeLabel1" destination="c19-D5-dhu" id="69c-uL-HII"/>
                         <outlet property="tempLabel" destination="U3C-Rx-DPK" id="QEs-Kb-J3P"/>
                     </connections>
                 </viewController>
@@ -245,13 +257,13 @@
                                     <action selector="closeView:" destination="kQY-ik-42x" eventType="touchUpInside" id="dm9-Mk-3Eu"/>
                                 </connections>
                             </button>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="logo-rgb-ifgi-text-en.jpg" id="yi4-al-h00">
-                                <rect key="frame" x="20" y="376" width="240" height="84"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="ifgi.png" id="yi4-al-h00">
+                                <rect key="frame" x="9" y="376" width="240" height="84"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                             </imageView>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" id="bwD-mb-wdY">
-                                <rect key="frame" x="40" y="80" width="240" height="282"/>
+                                <rect key="frame" x="0.0" y="80" width="320" height="288"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
@@ -789,7 +801,7 @@
             </objects>
             <point key="canvasLocation" x="57" y="-257"/>
         </scene>
-        <!--Select Cam View Controller-->
+        <!--Select Cam View Controller - Live Webcams-->
         <scene sceneID="Yx1-Di-jzb">
             <objects>
                 <viewController id="lk0-RI-Ol7" customClass="SelectCamViewController" sceneMemberID="viewController">
@@ -824,7 +836,7 @@
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <segue destination="zS1-BF-zfs" kind="push" id="3PD-0T-aPN"/>
+                                    <segue destination="cDU-b2-GQn" kind="push" id="K5V-Bn-wbh"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="hA5-kY-KxU">
@@ -845,7 +857,7 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
-                    <navigationItem key="navigationItem" id="iky-0J-pQT"/>
+                    <navigationItem key="navigationItem" title="Live Webcams" id="iky-0J-pQT"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="NxO-ra-TcW" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -1052,57 +1064,21 @@
             </objects>
             <point key="canvasLocation" x="-264" y="618"/>
         </scene>
-        <!--Aasee Cam View Controller - Webcam-->
-        <scene sceneID="XBv-yN-ksP">
-            <objects>
-                <viewController id="zS1-BF-zfs" customClass="AaseeCamViewController" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="Fj1-dE-Z9o">
-                        <rect key="frame" x="0.0" y="64" width="480" height="207"/>
-                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                        <subviews>
-                            <webView contentMode="scaleToFill" scalesPageToFit="YES" id="Szs-Hk-5Xk">
-                                <rect key="frame" x="0.0" y="0.0" width="480" height="220"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                            </webView>
-                        </subviews>
-                        <color key="backgroundColor" red="0.29803922770000002" green="0.29803922770000002" blue="0.29803922770000002" alpha="1" colorSpace="calibratedRGB"/>
-                        <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
-                    </view>
-                    <tabBarItem key="tabBarItem" title="Webcam" image="Webcam-1.png" id="IE4-Lz-6uK"/>
-                    <navigationItem key="navigationItem" id="QxW-bw-yK3">
-                        <barButtonItem key="rightBarButtonItem" systemItem="save" id="UBD-Ce-ICk">
-                            <connections>
-                                <action selector="savePicture:" destination="zS1-BF-zfs" id="gEj-L3-Ysi"/>
-                            </connections>
-                        </barButtonItem>
-                    </navigationItem>
-                    <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
-                    <simulatedScreenMetrics key="simulatedDestinationMetrics"/>
-                    <connections>
-                        <outlet property="web" destination="Szs-Hk-5Xk" id="WS6-0O-E1X"/>
-                    </connections>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="J1q-CH-J1C" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="1040" y="-1499"/>
-        </scene>
         <!--Bottanisch Cam View Controller-->
         <scene sceneID="lec-Um-Dy9">
             <objects>
                 <viewController id="PBc-aV-cYV" customClass="BottanischCamViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="yia-F4-5XG">
-                        <rect key="frame" x="0.0" y="64" width="480" height="207"/>
+                        <rect key="frame" x="0.0" y="64" width="320" height="367"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <webView contentMode="scaleAspectFit" scalesPageToFit="YES" id="AKN-KV-iGC">
-                                <rect key="frame" x="0.0" y="0.0" width="480" height="218"/>
+                            <webView userInteractionEnabled="NO" contentMode="scaleAspectFit" scalesPageToFit="YES" id="AKN-KV-iGC">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="216"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                             </webView>
                         </subviews>
                         <color key="backgroundColor" red="0.29803922770000002" green="0.29803922770000002" blue="0.29803922770000002" alpha="1" colorSpace="calibratedRGB"/>
-                        <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
                     </view>
                     <navigationItem key="navigationItem" id="bey-bd-cXV">
                         <barButtonItem key="rightBarButtonItem" systemItem="save" id="L8x-4A-QIb">
@@ -1111,7 +1087,7 @@
                             </connections>
                         </barButtonItem>
                     </navigationItem>
-                    <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
+                    <simulatedOrientationMetrics key="simulatedOrientationMetrics"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics"/>
                     <connections>
                         <outlet property="web" destination="AKN-KV-iGC" id="bnp-Pa-sP6"/>
@@ -1119,24 +1095,24 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="f9e-Vh-z4N" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1040" y="-1063"/>
+            <point key="canvasLocation" x="1003" y="-949"/>
         </scene>
         <!--Klima Cam View Controller - Webcam-->
         <scene sceneID="6aT-XF-Pek">
             <objects>
                 <viewController wantsFullScreenLayout="YES" id="QTF-Hd-JIs" customClass="KlimaCamViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Up4-i4-Lcg">
-                        <rect key="frame" x="0.0" y="64" width="480" height="207"/>
+                        <rect key="frame" x="0.0" y="64" width="320" height="367"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <webView contentMode="scaleToFill" scalesPageToFit="YES" id="lIc-D8-boq">
-                                <rect key="frame" x="0.0" y="0.0" width="480" height="207"/>
-                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                            <webView userInteractionEnabled="NO" contentMode="scaleToFill" scalesPageToFit="YES" id="lIc-D8-boq">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="208"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <dataDetectorType key="dataDetectorTypes"/>
                             </webView>
                         </subviews>
                         <color key="backgroundColor" red="0.29803922770000002" green="0.29803922770000002" blue="0.29803922770000002" alpha="1" colorSpace="calibratedRGB"/>
-                        <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Webcam" image="Webcam-1.png" id="1MP-yK-80j"/>
                     <navigationItem key="navigationItem" id="N1h-vq-7eV">
@@ -1146,7 +1122,7 @@
                             </connections>
                         </barButtonItem>
                     </navigationItem>
-                    <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
+                    <simulatedOrientationMetrics key="simulatedOrientationMetrics"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics"/>
                     <connections>
                         <outlet property="web" destination="lIc-D8-boq" id="EaN-32-4JT"/>
@@ -1155,6 +1131,74 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="kfZ-qe-WwL" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1040" y="-1970"/>
+        </scene>
+        <!--Aasee Cam View Controller-->
+        <scene sceneID="0xL-bL-5ou">
+            <objects>
+                <viewController id="cDU-b2-GQn" customClass="AaseeCamViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Ioz-uR-Lci">
+                        <rect key="frame" x="0.0" y="64" width="320" height="367"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <webView userInteractionEnabled="NO" contentMode="scaleToFill" scalesPageToFit="YES" id="qCX-EK-SS9">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="175"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                            </webView>
+                            <webView userInteractionEnabled="NO" contentMode="scaleToFill" scalesPageToFit="YES" id="nwp-Vx-boF">
+                                <rect key="frame" x="88" y="183" width="144" height="184"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <dataDetectorType key="dataDetectorTypes"/>
+                            </webView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="7cJ-cr-DMg">
+                                <rect key="frame" x="88" y="183" width="152" height="112"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal">
+                                    <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="werbung1:" destination="cDU-b2-GQn" eventType="touchUpInside" id="W3O-G7-D59"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="Cze-UX-cMo">
+                                <rect key="frame" x="84" y="283" width="152" height="85"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal">
+                                    <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="werbung2:" destination="cDU-b2-GQn" eventType="touchUpInside" id="sRM-Vw-kcn"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="8Ds-qV-0GJ">
+                        <barButtonItem key="rightBarButtonItem" title="Save" id="OWU-yA-8qG">
+                            <connections>
+                                <action selector="savePicture:" destination="cDU-b2-GQn" id="kHr-of-P11"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="web" destination="qCX-EK-SS9" id="FED-bo-kJt"/>
+                        <outlet property="werbung" destination="nwp-Vx-boF" id="CSp-hd-vcW"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="VAu-V2-uOF" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1170" y="-1588"/>
         </scene>
         <!--Navigation Controller - Webcam-->
         <scene sceneID="WTC-FH-rKA">
@@ -1202,124 +1246,8 @@
         <image name="UIBarButtonItemBack.png" width="88" height="44"/>
         <image name="Webcam-1.png" width="23" height="30"/>
         <image name="archiv.png" width="30" height="30"/>
-        <image name="logo-rgb-ifgi-text-en.jpg" width="406" height="145"/>
+        <image name="ifgi.png" width="410" height="150"/>
     </resources>
-    <classes>
-        <class className="AaseeCamViewController" superclassName="UIViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/AaseeCamViewController.h"/>
-            <relationships>
-                <relationship kind="action" name="refresh:"/>
-                <relationship kind="action" name="savePicture:"/>
-                <relationship kind="outlet" name="web" candidateClass="UIWebView"/>
-            </relationships>
-        </class>
-        <class className="BottanischCamViewController" superclassName="UIViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/BottanischCamViewController.h"/>
-            <relationships>
-                <relationship kind="action" name="refresh:"/>
-                <relationship kind="action" name="savePicture:"/>
-                <relationship kind="outlet" name="web" candidateClass="UIWebView"/>
-            </relationships>
-        </class>
-        <class className="CreditsViewController" superclassName="UIViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/CreditsViewController.h"/>
-            <relationships>
-                <relationship kind="action" name="closeView:"/>
-                <relationship kind="outlet" name="textView" candidateClass="UITextView"/>
-            </relationships>
-        </class>
-        <class className="DayViewController" superclassName="UITableViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/DayViewController.h"/>
-            <relationships>
-                <relationship kind="action" name="showGrafik:"/>
-                <relationship kind="outlet" name="luftdruck" candidateClass="UILabel"/>
-                <relationship kind="outlet" name="luftfeuchtigkeit" candidateClass="UILabel"/>
-                <relationship kind="outlet" name="maxTemperaturLabel" candidateClass="UILabel"/>
-                <relationship kind="outlet" name="maxwind" candidateClass="UILabel"/>
-                <relationship kind="outlet" name="minTemperaturLabel" candidateClass="UILabel"/>
-                <relationship kind="outlet" name="niederschlag" candidateClass="UILabel"/>
-                <relationship kind="outlet" name="sichtweite" candidateClass="UILabel"/>
-                <relationship kind="outlet" name="temperaturLabel" candidateClass="UILabel"/>
-                <relationship kind="outlet" name="windgeschwindigkeit" candidateClass="UILabel"/>
-                <relationship kind="outlet" name="windrichtung" candidateClass="UILabel"/>
-            </relationships>
-        </class>
-        <class className="KlimaCamViewController" superclassName="UIViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/KlimaCamViewController.h"/>
-            <relationships>
-                <relationship kind="action" name="refresh:"/>
-                <relationship kind="action" name="savePicture:"/>
-                <relationship kind="outlet" name="web" candidateClass="UIWebView"/>
-            </relationships>
-        </class>
-        <class className="LiveViewController" superclassName="UIViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/LiveViewController.h"/>
-            <relationships>
-                <relationship kind="action" name="refresh:"/>
-                <relationship kind="outlet" name="codeLabel" candidateClass="UILabel"/>
-                <relationship kind="outlet" name="tempLabel" candidateClass="UILabel"/>
-            </relationships>
-        </class>
-        <class className="LuftdruckController" superclassName="UIViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/LuftdruckController.h"/>
-            <relationships>
-                <relationship kind="action" name="fiveDays:"/>
-                <relationship kind="action" name="twentyDays:"/>
-                <relationship kind="outlet" name="web" candidateClass="UIWebView"/>
-            </relationships>
-        </class>
-        <class className="LuftfeuchtigkeitController" superclassName="UIViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/LuftfeuchtigkeitController.h"/>
-            <relationships>
-                <relationship kind="action" name="fiveDays:"/>
-                <relationship kind="action" name="twentyDays:"/>
-                <relationship kind="outlet" name="web" candidateClass="UIWebView"/>
-            </relationships>
-        </class>
-        <class className="MonthViewController" superclassName="UIViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/MonthViewController.h"/>
-            <relationships>
-                <relationship kind="outlet" name="tableView" candidateClass="UITableView"/>
-            </relationships>
-        </class>
-        <class className="NavViewController" superclassName="UIViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/NavViewController.h"/>
-            <relationships>
-                <relationship kind="outlet" name="tableView" candidateClass="UITableView"/>
-            </relationships>
-        </class>
-        <class className="SelectCamViewController" superclassName="UIViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/SelectCamViewController.h"/>
-        </class>
-        <class className="SelectController" superclassName="UIViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/SelectController.h"/>
-        </class>
-        <class className="TableViewController" superclassName="UIViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/TableViewController.h"/>
-            <relationships>
-                <relationship kind="outlet" name="tableView" candidateClass="UITableView"/>
-            </relationships>
-        </class>
-        <class className="ViewController" superclassName="UIViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/ViewController.h"/>
-            <relationships>
-                <relationship kind="action" name="fiveDays:"/>
-                <relationship kind="action" name="twentyDays:"/>
-                <relationship kind="outlet" name="web" candidateClass="UIWebView"/>
-            </relationships>
-        </class>
-        <class className="WSGraphViewController" superclassName="UIViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/WSGraphViewController.h"/>
-        </class>
-        <class className="WindgeschwindigkeitController" superclassName="UIViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/WindgeschwindigkeitController.h"/>
-            <relationships>
-                <relationship kind="action" name="fiveDays:"/>
-                <relationship kind="action" name="twentyDays:"/>
-                <relationship kind="outlet" name="web" candidateClass="UIWebView"/>
-            </relationships>
-        </class>
-    </classes>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>
         <simulatedOrientationMetrics key="orientation"/>
