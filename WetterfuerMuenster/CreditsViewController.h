@@ -11,5 +11,6 @@
 @interface CreditsViewController : UIViewController
 - (IBAction)closeView:(id)sender;
 @property (strong, nonatomic) IBOutlet UITextView *textView;
+@property (strong, nonatomic) IBOutlet UILabel *version;
 
 @end

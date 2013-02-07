@@ -43,6 +43,9 @@
     
     NSString *wetterCodeinQuelltext;
     NSString *wetterCode;
+    NSData *dt = [wetterCode dataUsingEncoding:NSWindowsCP1251StringEncoding];
+    NSString *str = [[NSString alloc] initWithData:dt encoding:NSUTF8StringEncoding];
+    
     
     NSString *wetterCodeInQuelltext1;
     NSString *wetterCode1;
@@ -77,6 +80,8 @@
         wetterCodeinQuelltext = quelltext[254];
         int length = [wetterCodeinQuelltext rangeOfString:@"</td>"].location - 54;
         wetterCode = [wetterCodeinQuelltext substringWithRange:NSMakeRange(54, length)];
+        //NSLog(@"%s", wetterCode.UTF8String);
+        //wetterCode
         self.codeLabel.text = [wetterCode capitalizedString];
         
         
@@ -91,7 +96,11 @@
         int *length2 = [wetterCodeInQuelltext2 rangeOfString:@"</td>"].location -54;
         //NSLog(@"%i", [wetterCodeInQuelltext2 rangeOfString:@"\">"].location);
         wetterCode2 = [wetterCodeInQuelltext2 substringWithRange:NSMakeRange(54, length2)];
-      self.codeLabel1.text = [NSString stringWithFormat:@"%@ - %@", wetterCode1, wetterCode2];
+        self.codeLabel1.text = [NSString stringWithFormat:@"%@ - %@", wetterCode1, wetterCode2];
+        if ([self.codeLabel1.text  isEqualToString:@"(null) - (null)"]) {
+            self.codeLabel1.text = [NSString stringWithFormat:@"Fehler"];
+        }
+        
         }
 }
 
@@ -102,9 +111,11 @@
 }
 
 - (IBAction)refresh:(id)sender {
-    NSArray *quelltext;
+    /*NSArray *quelltext;
     NSString *tempInQuelltext;
-    NSString *temp;
+    NSString *temp;*/
+    
+    
     
     NSURL *url = [NSURL URLWithString:@"http://www.uni-muenster.de/Klima/wetter/wetter.php"];
     NSString *content = [NSString stringWithContentsOfURL:url encoding:NSUTF8StringEncoding error:NULL];
@@ -115,10 +126,17 @@
     }
     else
     {
+        /*
         quelltext = [content componentsSeparatedByString:@"\n"];
         tempInQuelltext = quelltext[203];
         temp = [tempInQuelltext substringWithRange:NSMakeRange(54, 6)];
         self.tempLabel.text = temp;
+         
+         */
+        
+        
+        
+        [self viewDidLoad];
     }
     
 }

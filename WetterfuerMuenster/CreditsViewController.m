@@ -29,6 +29,7 @@
     
     self.textView.backgroundColor = [UIColor clearColor];
     //self.textView.text = @"hallo!";
+    self.version.text = @"Version 0.8 Beta 1!";
     
     
     

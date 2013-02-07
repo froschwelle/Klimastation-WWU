@@ -93,6 +93,9 @@
         //NSLog(@"%i", [wetterCodeInQuelltext2 rangeOfString:@"\">"].location);
         wetterCode2 = [wetterCodeInQuelltext2 substringWithRange:NSMakeRange(54, length2)];
         self.codeLabel1.text = [NSString stringWithFormat:@"%@ - %@", wetterCode1, wetterCode2];
+        if ([self.codeLabel1.text  isEqualToString:@"(null) - (null)"]) {
+            self.codeLabel1.text = [NSString stringWithFormat:@"Fehler"];
+        }
     }
 }
 
@@ -105,9 +108,7 @@
 }
 
 - (IBAction)refresh:(id)sender {
-    NSArray *quelltext;
-    NSString *tempInQuelltext;
-    NSString *temp;
+    
     
     NSURL *url = [NSURL URLWithString:@"http://www.uni-muenster.de/Klima/wetter/wetter.php"];
     NSString *content = [NSString stringWithContentsOfURL:url encoding:NSUTF8StringEncoding error:NULL];
@@ -118,12 +119,7 @@
     }
     else
     {
-        quelltext = [content componentsSeparatedByString:@"\n"];
-        NSLog(@"%@",quelltext[203]);
-        tempInQuelltext = quelltext[203];
-        temp = [tempInQuelltext substringWithRange:NSMakeRange(54, 6)];
-        NSLog(@"%@",temp);
-        self.tempLabel.text = temp;
+        [self viewDidLoad];
     }
 }
 @end
