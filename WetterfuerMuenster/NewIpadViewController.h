@@ -14,8 +14,8 @@
 @property (strong, nonatomic) IBOutlet UILabel *label1;
 @property (strong, nonatomic) IBOutlet UILabel *label2;
 - (IBAction)temperatur:(id)sender;
-- (IBAction)luftfeuchtigkeit:(id)sender;
-- (IBAction)luftdruck:(id)sender;
+- (IBAction)luftfeuchtigkeit:(id)sender; //Jetzt Windrichtung
+- (IBAction)luftdruck:(id)sender; 
 - (IBAction)windgeschwindigkeit:(id)sender;
 - (IBAction)refresh:(id)sender;
 

@@ -186,7 +186,7 @@
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                             </imageView>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="-2 °C" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="njJ-yx-Ibl">
-                                <rect key="frame" x="20" y="319" width="728" height="318"/>
+                                <rect key="frame" x="20" y="253" width="728" height="318"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="160"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
@@ -208,8 +208,8 @@
                                     <action selector="refresh:" destination="uoi-pT-Icj" eventType="touchUpInside" id="l4g-dG-ZDb"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Münster" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="Ohm-tR-H5Q">
-                                <rect key="frame" x="252" y="191" width="264" height="120"/>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Münster" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="Ohm-tR-H5Q">
+                                <rect key="frame" x="205" y="125" width="359" height="120"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="73"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -243,12 +243,32 @@
                                 <color key="shadowColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                                 <size key="shadowOffset" width="0.0" height="1"/>
                             </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="e7i-S8-GLD">
+                                <rect key="frame" x="0.0" y="537" width="768" height="95"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="60"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                                <color key="shadowColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                <size key="shadowOffset" width="0.0" height="3"/>
+                            </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="xUD-Uj-bNj">
+                                <rect key="frame" x="0.0" y="646" width="768" height="98"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="50"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                                <color key="shadowColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                <size key="shadowOffset" width="0.0" height="3"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" red="0.0" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Live" image="Live.png" id="Dfw-Db-VSN"/>
                     <connections>
-                        <outlet property="tempLabel" destination="njJ-yx-Ibl" id="miG-Ug-Dvy"/>
+                        <outlet property="codeLabel" destination="e7i-S8-GLD" id="COx-SI-3fs"/>
+                        <outlet property="codeLabel1" destination="xUD-Uj-bNj" id="R5w-od-u8V"/>
+                        <outlet property="tempLabel" destination="njJ-yx-Ibl" id="x02-CP-VkT"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="GZp-79-TeO" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -800,7 +820,7 @@
         <scene sceneID="ByH-UU-EEJ">
             <objects>
                 <navigationController definesPresentationContext="YES" id="A8U-Nf-ZAp" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" tag="2" title="Archiv" image="48.png" id="Fdf-Yj-lBr"/>
+                    <tabBarItem key="tabBarItem" tag="2" title="Archiv" image="archiv.png" id="Fdf-Yj-lBr"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="4Oz-80-F6Z">
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
@@ -951,15 +971,15 @@
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Luftfeuchtigkeit" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="LdP-Tz-tlJ">
-                                <rect key="frame" x="220" y="752" width="115" height="21"/>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Windrichtung" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="LdP-Tz-tlJ">
+                                <rect key="frame" x="224" y="752" width="108" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Luftdruck" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="1Op-sk-AD0">
-                                <rect key="frame" x="419" y="752" width="70" height="21"/>
+                                <rect key="frame" x="418" y="752" width="84" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
@@ -991,6 +1011,9 @@
                                 <state key="highlighted">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="windgeschwindigkeit:" destination="jse-Q0-o9d" eventType="touchUpInside" id="XVh-Tn-e1z"/>
+                                </connections>
                             </button>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Windgeschwindigkeit" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="rik-02-AzQ">
                                 <rect key="frame" x="573" y="752" width="159" height="21"/>
@@ -1109,13 +1132,13 @@
         </scene>
     </scenes>
     <resources>
-        <image name="48.png" width="16" height="16"/>
         <image name="Graph.png" width="34" height="30"/>
         <image name="Live.png" width="40" height="35"/>
         <image name="TableViewBackground.png" width="320" height="416"/>
         <image name="TableViewBackground@2x.png" width="1024" height="1024"/>
         <image name="UIBarButtonItem@2x.png" width="176" height="88"/>
         <image name="Webcam-1.png" width="23" height="30"/>
+        <image name="archiv.png" width="30" height="30"/>
         <image name="ifgi.png" width="410" height="150"/>
     </resources>
     <classes>
@@ -1160,6 +1183,9 @@
             <source key="sourceIdentifier" type="project" relativePath="./Classes/IpadDataViewController.h"/>
             <relationships>
                 <relationship kind="action" name="refresh:"/>
+                <relationship kind="outlet" name="codeLabel" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="codeLabel1" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="codeLabel2" candidateClass="UILabel"/>
                 <relationship kind="outlet" name="tempLabel" candidateClass="UILabel"/>
             </relationships>
         </class>

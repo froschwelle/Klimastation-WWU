@@ -83,13 +83,13 @@
         
         wetterCodeInQuelltext1 = quelltext[248];
         int *length1 = [wetterCodeInQuelltext1 rangeOfString:@"</td>"].location -23;
-        NSLog(@"%i", [wetterCodeInQuelltext1 rangeOfString:@"\"tab3\">"].location);
+        //NSLog(@"%i", [wetterCodeInQuelltext1 rangeOfString:@"\"tab3\">"].location);
         wetterCode1 = [wetterCodeInQuelltext1 substringWithRange:NSMakeRange(23, length1)];
         
         
         wetterCodeInQuelltext2 = quelltext[249];
         int *length2 = [wetterCodeInQuelltext2 rangeOfString:@"</td>"].location -54;
-        NSLog(@"%i", [wetterCodeInQuelltext2 rangeOfString:@"\">"].location);
+        //NSLog(@"%i", [wetterCodeInQuelltext2 rangeOfString:@"\">"].location);
         wetterCode2 = [wetterCodeInQuelltext2 substringWithRange:NSMakeRange(54, length2)];
       self.codeLabel1.text = [NSString stringWithFormat:@"%@ - %@", wetterCode1, wetterCode2];
         }

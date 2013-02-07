@@ -67,8 +67,8 @@
     self.label1.text = @"";
     self.label2.text = @"";
     
-    self.url1 = [NSURL URLWithString:@"http://www.uni-muenster.de/Klima/data/pics/0002rhhg_05_de.gif"];
-    self.url2 = [NSURL URLWithString:@"http://www.uni-muenster.de/Klima/data/pics/0002rhhg_20_de.gif"];
+    self.url1 = [NSURL URLWithString:@"http://www.uni-muenster.de/Klima/data/pics/0004wdhg_05_de.gif"];
+    self.url2 = [NSURL URLWithString:@"http://www.uni-muenster.de/Klima/data/pics/0004wdhg_05_de.gif"];
     
     NSURLRequest *request = [NSURLRequest requestWithURL:self.url1];
     NSURLRequest *request2 = [NSURLRequest requestWithURL:self.url2];

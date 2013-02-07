@@ -11,6 +11,9 @@
 @interface IpadDataViewController : UIViewController
 @property (strong, nonatomic) IBOutlet UILabel *tempLabel;
 - (IBAction)refresh:(id)sender;
+@property (strong, nonatomic) IBOutlet UILabel *codeLabel;
+@property (strong, nonatomic) IBOutlet UILabel *codeLabel1;
+@property (strong, nonatomic) IBOutlet UILabel *codeLabel2;
 - (BOOL) isConnected;
 
 @end

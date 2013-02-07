@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5428751816C30703009E084F /* wwu-full.png in Resources */ = {isa = PBXBuildFile; fileRef = 5428751716C30703009E084F /* wwu-full.png */; };
 		546FEE0816C11EBE004C835A /* libCorePlot-CocoaTouch.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 546FEE0716C11EBE004C835A /* libCorePlot-CocoaTouch.a */; };
 		54A335CC16BFB7E800544C8C /* CreditsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 54A335CB16BFB7E800544C8C /* CreditsViewController.m */; };
 		54A335CF16BFDF3700544C8C /* logo-rgb-ifgi-text-en.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 54A335CD16BFDF3700544C8C /* logo-rgb-ifgi-text-en.jpg */; };
@@ -77,6 +78,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		5428751716C30703009E084F /* wwu-full.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "wwu-full.png"; sourceTree = "<group>"; };
 		546FEDBD16C11EBD004C835A /* CorePlot-CocoaTouch.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "CorePlot-CocoaTouch.h"; sourceTree = "<group>"; };
 		546FEDBE16C11EBD004C835A /* CPTAnnotation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CPTAnnotation.h; sourceTree = "<group>"; };
 		546FEDBF16C11EBD004C835A /* CPTAnnotationHostLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CPTAnnotationHostLayer.h; sourceTree = "<group>"; };
@@ -201,7 +203,7 @@
 		A3AABAF716B922DB009D0A4B /* BottanischCamViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BottanischCamViewController.m; sourceTree = "<group>"; };
 		A3B4BF0916B2AD6E00C1E235 /* IpadDataViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IpadDataViewController.h; sourceTree = "<group>"; };
 		A3B4BF0A16B2AD6E00C1E235 /* IpadDataViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IpadDataViewController.m; sourceTree = "<group>"; };
-		A3D2251216AEB92F00F918F0 /* Klimastation.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Klimastation.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		A3D2251216AEB92F00F918F0 /* Klima Münster.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Klima Münster.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A3D2251616AEB92F00F918F0 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		A3D2251816AEB92F00F918F0 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		A3D2251A16AEB92F00F918F0 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -359,7 +361,7 @@
 		A3D2251316AEB92F00F918F0 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				A3D2251216AEB92F00F918F0 /* Klimastation.app */,
+				A3D2251216AEB92F00F918F0 /* Klima Münster.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -434,6 +436,7 @@
 			children = (
 				54E69E0516C2AD9D0020BDB9 /* ifgi.png */,
 				54F6ACCC16BE856A00A092E7 /* ifgilogo.gif */,
+				5428751716C30703009E084F /* wwu-full.png */,
 				54F6ACCD16BE856A00A092E7 /* wwu_logo.png */,
 				54A335CD16BFDF3700544C8C /* logo-rgb-ifgi-text-en.jpg */,
 				54A335CE16BFDF3700544C8C /* wwu_logo_ohne_text.jpg */,
@@ -493,7 +496,7 @@
 			);
 			name = WetterfuerMuenster;
 			productName = WetterfuerMuenster;
-			productReference = A3D2251216AEB92F00F918F0 /* Klimastation.app */;
+			productReference = A3D2251216AEB92F00F918F0 /* Klima Münster.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -567,6 +570,7 @@
 				54A335CF16BFDF3700544C8C /* logo-rgb-ifgi-text-en.jpg in Resources */,
 				54A335D016BFDF3700544C8C /* wwu_logo_ohne_text.jpg in Resources */,
 				54E69E0616C2AD9D0020BDB9 /* ifgi.png in Resources */,
+				5428751816C30703009E084F /* wwu-full.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -694,7 +698,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				LIBRARY_SEARCH_PATHS = "\"$(SRCROOT)/iOS\"";
 				OTHER_LDFLAGS = "-ObjC";
-				PRODUCT_NAME = Klimastation;
+				PRODUCT_NAME = "Klima Münster";
 				TARGETED_DEVICE_FAMILY = "1,2";
 				WRAPPER_EXTENSION = app;
 			};
@@ -711,7 +715,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				LIBRARY_SEARCH_PATHS = "\"$(SRCROOT)/iOS\"";
 				OTHER_LDFLAGS = "-ObjC";
-				PRODUCT_NAME = Klimastation;
+				PRODUCT_NAME = "Klima Münster";
 				TARGETED_DEVICE_FAMILY = "1,2";
 				WRAPPER_EXTENSION = app;
 			};

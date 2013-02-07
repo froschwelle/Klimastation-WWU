@@ -29,7 +29,7 @@
 	// Do any additional setup after loading the view.
     self.view.backgroundColor = [[UIColor alloc] initWithPatternImage:
                                  [UIImage imageNamed:@"TableViewBackground"]];
-    NSURL *url1 = [NSURL URLWithString:@"http://www.uni-muenster.de/Klima/data/pics/0002rhhg_05_de.gif"];
+    NSURL *url1 = [NSURL URLWithString:@"http://www.uni-muenster.de/Klima/data/pics/0004wdhg_05_de.gif"];
     NSURLRequest *request = [NSURLRequest requestWithURL:url1];
     
     [self.web loadRequest:request];
@@ -45,7 +45,7 @@
     //[self.activity startAnimating];
     //self.activity.hidden = NO;
     
-    NSURL *url1 = [NSURL URLWithString:@"http://www.uni-muenster.de/Klima/data/pics/0002rhhg_05_de.gif"];
+    NSURL *url1 = [NSURL URLWithString:@"http://www.uni-muenster.de/Klima/data/pics/0004wdhg_05_de.gif"];
     NSURLRequest *request = [NSURLRequest requestWithURL:url1];
 
     [self.web loadRequest:request];
@@ -58,7 +58,7 @@
     //[self.activity startAnimating];
     //self.activity.hidden = NO;
     
-    NSURL *url2 = [NSURL URLWithString:@"http://www.uni-muenster.de/Klima/data/pics/0002rhhg_20_de.gif"];
+    NSURL *url2 = [NSURL URLWithString:@"http://www.uni-muenster.de/Klima/data/pics/0004wdhg_05_de.gif"];
     NSURLRequest *request2 = [NSURLRequest requestWithURL:url2];
     
     [self.web loadRequest:request2];
