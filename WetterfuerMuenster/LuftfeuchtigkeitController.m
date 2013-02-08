@@ -58,7 +58,7 @@
     //[self.activity startAnimating];
     //self.activity.hidden = NO;
     
-    NSURL *url2 = [NSURL URLWithString:@"http://www.uni-muenster.de/Klima/data/pics/0004wdhg_05_de.gif"];
+    NSURL *url2 = [NSURL URLWithString:@"http://www.uni-muenster.de/Klima/data/pics/0004wdhg_20_de.gif"];
     NSURLRequest *request2 = [NSURLRequest requestWithURL:url2];
     
     [self.web loadRequest:request2];
