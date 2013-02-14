@@ -410,4 +410,17 @@
 	return minimumValue;
 }
 
+
+- (IBAction)infoPressed:(id)sender {
+        UIAlertView *info = [[UIAlertView alloc]initWithTitle:@"Info" message:@"Um die anderen Werte zu erhalten auf den Graphen tippen!" delegate:nil cancelButtonTitle:@"Alles Klar!" otherButtonTitles:nil, nil];
+    [info show];
+    
+}
+ 
+
+- (void)viewDidUnload {
+    
+    [super viewDidUnload];
+}
+
 @end

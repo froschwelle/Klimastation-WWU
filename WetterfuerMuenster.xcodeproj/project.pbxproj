@@ -13,6 +13,15 @@
 		54A335CC16BFB7E800544C8C /* CreditsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 54A335CB16BFB7E800544C8C /* CreditsViewController.m */; };
 		54A335CF16BFDF3700544C8C /* logo-rgb-ifgi-text-en.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 54A335CD16BFDF3700544C8C /* logo-rgb-ifgi-text-en.jpg */; };
 		54A335D016BFDF3700544C8C /* wwu_logo_ohne_text.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 54A335CE16BFDF3700544C8C /* wwu_logo_ohne_text.jpg */; };
+		54E02CA016CA497B005B72B4 /* AFHTTPClient.m in Sources */ = {isa = PBXBuildFile; fileRef = 54E02C8E16CA497B005B72B4 /* AFHTTPClient.m */; };
+		54E02CA116CA497B005B72B4 /* AFHTTPRequestOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 54E02C9016CA497B005B72B4 /* AFHTTPRequestOperation.m */; };
+		54E02CA216CA497B005B72B4 /* AFImageRequestOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 54E02C9216CA497B005B72B4 /* AFImageRequestOperation.m */; };
+		54E02CA316CA497B005B72B4 /* AFJSONRequestOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 54E02C9416CA497B005B72B4 /* AFJSONRequestOperation.m */; };
+		54E02CA416CA497B005B72B4 /* AFNetworkActivityIndicatorManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 54E02C9616CA497B005B72B4 /* AFNetworkActivityIndicatorManager.m */; };
+		54E02CA516CA497B005B72B4 /* AFPropertyListRequestOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 54E02C9916CA497B005B72B4 /* AFPropertyListRequestOperation.m */; };
+		54E02CA616CA497B005B72B4 /* AFURLConnectionOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 54E02C9B16CA497B005B72B4 /* AFURLConnectionOperation.m */; };
+		54E02CA716CA497B005B72B4 /* AFXMLRequestOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 54E02C9D16CA497B005B72B4 /* AFXMLRequestOperation.m */; };
+		54E02CA816CA497B005B72B4 /* UIImageView+AFNetworking.m in Sources */ = {isa = PBXBuildFile; fileRef = 54E02C9F16CA497B005B72B4 /* UIImageView+AFNetworking.m */; };
 		54E69E0616C2AD9D0020BDB9 /* ifgi.png in Resources */ = {isa = PBXBuildFile; fileRef = 54E69E0516C2AD9D0020BDB9 /* ifgi.png */; };
 		54F6ACCE16BE856A00A092E7 /* ifgilogo.gif in Resources */ = {isa = PBXBuildFile; fileRef = 54F6ACCC16BE856A00A092E7 /* ifgilogo.gif */; };
 		54F6ACCF16BE856A00A092E7 /* wwu_logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 54F6ACCD16BE856A00A092E7 /* wwu_logo.png */; };
@@ -160,6 +169,25 @@
 		54A335CB16BFB7E800544C8C /* CreditsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CreditsViewController.m; sourceTree = "<group>"; };
 		54A335CD16BFDF3700544C8C /* logo-rgb-ifgi-text-en.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "logo-rgb-ifgi-text-en.jpg"; sourceTree = "<group>"; };
 		54A335CE16BFDF3700544C8C /* wwu_logo_ohne_text.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = wwu_logo_ohne_text.jpg; sourceTree = "<group>"; };
+		54E02C8D16CA497B005B72B4 /* AFHTTPClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFHTTPClient.h; sourceTree = "<group>"; };
+		54E02C8E16CA497B005B72B4 /* AFHTTPClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFHTTPClient.m; sourceTree = "<group>"; };
+		54E02C8F16CA497B005B72B4 /* AFHTTPRequestOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFHTTPRequestOperation.h; sourceTree = "<group>"; };
+		54E02C9016CA497B005B72B4 /* AFHTTPRequestOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFHTTPRequestOperation.m; sourceTree = "<group>"; };
+		54E02C9116CA497B005B72B4 /* AFImageRequestOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFImageRequestOperation.h; sourceTree = "<group>"; };
+		54E02C9216CA497B005B72B4 /* AFImageRequestOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFImageRequestOperation.m; sourceTree = "<group>"; };
+		54E02C9316CA497B005B72B4 /* AFJSONRequestOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFJSONRequestOperation.h; sourceTree = "<group>"; };
+		54E02C9416CA497B005B72B4 /* AFJSONRequestOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFJSONRequestOperation.m; sourceTree = "<group>"; };
+		54E02C9516CA497B005B72B4 /* AFNetworkActivityIndicatorManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFNetworkActivityIndicatorManager.h; sourceTree = "<group>"; };
+		54E02C9616CA497B005B72B4 /* AFNetworkActivityIndicatorManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFNetworkActivityIndicatorManager.m; sourceTree = "<group>"; };
+		54E02C9716CA497B005B72B4 /* AFNetworking.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFNetworking.h; sourceTree = "<group>"; };
+		54E02C9816CA497B005B72B4 /* AFPropertyListRequestOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFPropertyListRequestOperation.h; sourceTree = "<group>"; };
+		54E02C9916CA497B005B72B4 /* AFPropertyListRequestOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFPropertyListRequestOperation.m; sourceTree = "<group>"; };
+		54E02C9A16CA497B005B72B4 /* AFURLConnectionOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFURLConnectionOperation.h; sourceTree = "<group>"; };
+		54E02C9B16CA497B005B72B4 /* AFURLConnectionOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFURLConnectionOperation.m; sourceTree = "<group>"; };
+		54E02C9C16CA497B005B72B4 /* AFXMLRequestOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFXMLRequestOperation.h; sourceTree = "<group>"; };
+		54E02C9D16CA497B005B72B4 /* AFXMLRequestOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFXMLRequestOperation.m; sourceTree = "<group>"; };
+		54E02C9E16CA497B005B72B4 /* UIImageView+AFNetworking.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImageView+AFNetworking.h"; sourceTree = "<group>"; };
+		54E02C9F16CA497B005B72B4 /* UIImageView+AFNetworking.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImageView+AFNetworking.m"; sourceTree = "<group>"; };
 		54E69E0516C2AD9D0020BDB9 /* ifgi.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ifgi.png; sourceTree = "<group>"; };
 		54F6ACCC16BE856A00A092E7 /* ifgilogo.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = ifgilogo.gif; sourceTree = "<group>"; };
 		54F6ACCD16BE856A00A092E7 /* wwu_logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = wwu_logo.png; sourceTree = "<group>"; };
@@ -348,9 +376,36 @@
 			path = iOS/CorePlotHeaders;
 			sourceTree = "<group>";
 		};
+		54E02C8C16CA497B005B72B4 /* AFNetworking */ = {
+			isa = PBXGroup;
+			children = (
+				54E02C8D16CA497B005B72B4 /* AFHTTPClient.h */,
+				54E02C8E16CA497B005B72B4 /* AFHTTPClient.m */,
+				54E02C8F16CA497B005B72B4 /* AFHTTPRequestOperation.h */,
+				54E02C9016CA497B005B72B4 /* AFHTTPRequestOperation.m */,
+				54E02C9116CA497B005B72B4 /* AFImageRequestOperation.h */,
+				54E02C9216CA497B005B72B4 /* AFImageRequestOperation.m */,
+				54E02C9316CA497B005B72B4 /* AFJSONRequestOperation.h */,
+				54E02C9416CA497B005B72B4 /* AFJSONRequestOperation.m */,
+				54E02C9516CA497B005B72B4 /* AFNetworkActivityIndicatorManager.h */,
+				54E02C9616CA497B005B72B4 /* AFNetworkActivityIndicatorManager.m */,
+				54E02C9716CA497B005B72B4 /* AFNetworking.h */,
+				54E02C9816CA497B005B72B4 /* AFPropertyListRequestOperation.h */,
+				54E02C9916CA497B005B72B4 /* AFPropertyListRequestOperation.m */,
+				54E02C9A16CA497B005B72B4 /* AFURLConnectionOperation.h */,
+				54E02C9B16CA497B005B72B4 /* AFURLConnectionOperation.m */,
+				54E02C9C16CA497B005B72B4 /* AFXMLRequestOperation.h */,
+				54E02C9D16CA497B005B72B4 /* AFXMLRequestOperation.m */,
+				54E02C9E16CA497B005B72B4 /* UIImageView+AFNetworking.h */,
+				54E02C9F16CA497B005B72B4 /* UIImageView+AFNetworking.m */,
+			);
+			path = AFNetworking;
+			sourceTree = "<group>";
+		};
 		A3D2250716AEB92F00F918F0 = {
 			isa = PBXGroup;
 			children = (
+				54E02C8C16CA497B005B72B4 /* AFNetworking */,
 				546FEDBC16C11EBD004C835A /* CorePlotHeaders */,
 				546FEE0716C11EBE004C835A /* libCorePlot-CocoaTouch.a */,
 				A3EB936E16B94B20002C2E4B /* QuartzCore.framework */,
@@ -608,6 +663,15 @@
 				A3AABAF516B922CB009D0A4B /* AaseeCamViewController.m in Sources */,
 				A3AABAF816B922DB009D0A4B /* BottanischCamViewController.m in Sources */,
 				54A335CC16BFB7E800544C8C /* CreditsViewController.m in Sources */,
+				54E02CA016CA497B005B72B4 /* AFHTTPClient.m in Sources */,
+				54E02CA116CA497B005B72B4 /* AFHTTPRequestOperation.m in Sources */,
+				54E02CA216CA497B005B72B4 /* AFImageRequestOperation.m in Sources */,
+				54E02CA316CA497B005B72B4 /* AFJSONRequestOperation.m in Sources */,
+				54E02CA416CA497B005B72B4 /* AFNetworkActivityIndicatorManager.m in Sources */,
+				54E02CA516CA497B005B72B4 /* AFPropertyListRequestOperation.m in Sources */,
+				54E02CA616CA497B005B72B4 /* AFURLConnectionOperation.m in Sources */,
+				54E02CA716CA497B005B72B4 /* AFXMLRequestOperation.m in Sources */,
+				54E02CA816CA497B005B72B4 /* UIImageView+AFNetworking.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -699,7 +763,7 @@
 				GCC_PREFIX_HEADER = "WetterfuerMuenster/WetterfuerMuenster-Prefix.pch";
 				HEADER_SEARCH_PATHS = /Users/flori/Desktop/Programmieren/WetterfuerMuenster/KlimastationWWU/iOS/CorePlotHeaders;
 				INFOPLIST_FILE = "WetterfuerMuenster/WetterfuerMuenster-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
 				LIBRARY_SEARCH_PATHS = "\"$(SRCROOT)/iOS\"";
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "Klima Münster";
@@ -716,7 +780,7 @@
 				GCC_PREFIX_HEADER = "WetterfuerMuenster/WetterfuerMuenster-Prefix.pch";
 				HEADER_SEARCH_PATHS = /Users/flori/Desktop/Programmieren/WetterfuerMuenster/KlimastationWWU/iOS/CorePlotHeaders;
 				INFOPLIST_FILE = "WetterfuerMuenster/WetterfuerMuenster-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
 				LIBRARY_SEARCH_PATHS = "\"$(SRCROOT)/iOS\"";
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "Klima Münster";

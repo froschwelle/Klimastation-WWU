@@ -29,12 +29,12 @@ typedef enum
 
 @class WSMonthlyWeatherData;
 
-@interface WSGraphViewController : UIViewController
-
+@interface WSGraphViewController : UIViewController 
 @property (nonatomic, assign) NSInteger monthNumber;
 @property (nonatomic, strong) NSString *graphTitle;
 
 @property (nonatomic, assign) id <GraphDelegate> delegate;
+- (IBAction)infoPressed:(id)sender;
 
 
 @end
