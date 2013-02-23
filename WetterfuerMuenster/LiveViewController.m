@@ -165,6 +165,8 @@
     NSString *wetterCodeInQuelltext2;
     NSString *wetterCode2;
     
+ 
+    
     
     
     NSURL *url = [NSURL URLWithString:@"http://www.uni-muenster.de/Klima/wetter/wetter.php"];
@@ -221,7 +223,8 @@
             self.codeLabel1.text = [NSString stringWithFormat:@"Fehler"];
         }
         
-        }
+               
+    }
 }
 
 - (void)didReceiveMemoryWarning
@@ -263,4 +266,8 @@
     
 }
 
+- (void)viewDidUnload {
+    [self setLastReload:nil];
+    [super viewDidUnload];
+}
 @end

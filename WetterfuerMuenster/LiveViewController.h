@@ -13,6 +13,7 @@
 @property (strong, nonatomic) IBOutlet UILabel *codeLabel;
 @property (strong, nonatomic) IBOutlet UILabel *codeLabel1;
 @property (strong, nonatomic) IBOutlet UILabel *codeLabel2;
+@property (strong, nonatomic) IBOutlet UILabel *lastReload;
 
 - (IBAction)refresh:(id)sender;
 
