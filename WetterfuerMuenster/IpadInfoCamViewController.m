@@ -28,6 +28,11 @@
     [super viewDidLoad];
 	// Do any additional setup after loading the view.
     self.textview.backgroundColor = [UIColor clearColor];
+    
+    self.view.backgroundColor = [[UIColor alloc] initWithPatternImage:
+                                 [UIImage imageNamed:@"TableViewBackground"]];
+    
+    
 }
 
 - (void)didReceiveMemoryWarning
@@ -40,4 +45,7 @@
 
 
 
+- (IBAction)closeView:(id)sender {
+    [self dismissViewControllerAnimated:YES completion:nil];
+}
 @end

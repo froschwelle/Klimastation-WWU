@@ -274,7 +274,7 @@
                                 <rect key="frame" x="0.0" y="80" width="320" height="288"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                <string key="text">Diese App wurde Entwickelt vom Institut für Geoinformatik der Universität Münster.                  Hauptprogrammierer sind:                                     Tom Cinbis                                                            Florian Seichter                                                    Benjamin Böcker</string>
+                                <string key="text">Diese App wurde Entwickelt vom Institut für Geoinformatik der Universität Münster.                  Hauptprogrammierer sind:                                     Tom Cinbis                                                            Florian Seichter                                                    Benjamin Böcker                           </string>
                                 <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
@@ -887,6 +887,21 @@
                                     <segue destination="PBc-aV-cYV" kind="push" id="YVI-OY-iA4"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="infoLight" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" id="7Ck-Uw-DGm">
+                                <rect key="frame" x="255" y="316" width="18" height="19"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal">
+                                    <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="lyd-Dd-05F" kind="modal" modalTransitionStyle="partialCurl" id="SgF-hR-5oI"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
@@ -1134,6 +1149,56 @@
             </objects>
             <point key="canvasLocation" x="1109" y="-1149"/>
         </scene>
+        <!--Ipad Info Cam View Controller-->
+        <scene sceneID="SAO-cz-jJ3">
+            <objects>
+                <viewController id="lyd-Dd-05F" customClass="IpadInfoCamViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="sBx-ks-KuD">
+                        <rect key="frame" x="0.0" y="20" width="320" height="548"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" bounces="NO" scrollEnabled="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" editable="NO" id="coT-j3-jIm">
+                                <rect key="frame" x="0.0" y="86" width="320" height="265"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <string key="text">Die eingebundenen Webcams senden Livebilder alle 3 Sekunden in die App. Die Kameras verden zur Verfügung gestellt von der AG Klimatologie, vom Botanischen Garten der Universität Münster und von der Segel-, Yachtschule Overschmidt. Das  Institut für Geoinformatik übernimmt für die Inhalte der gestellten Webcams, sowie eventuelle Werbeinhalte keine Haftung! </string>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="wwu-full.png" id="Wjx-hW-3KT">
+                                <rect key="frame" x="0.0" y="267" width="222" height="102"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="overschmidt.jpg" id="kI4-Q7-7Ku">
+                                <rect key="frame" x="190" y="350" width="125" height="77"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="PT2-rF-9d7">
+                                <rect key="frame" x="20" y="377" width="100" height="50"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal" title="zurück" image="UIBarButtonItemBack.png">
+                                    <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="closeView:" destination="lyd-Dd-05F" eventType="touchUpInside" id="NUh-Kr-sH4"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <connections>
+                        <outlet property="textview" destination="coT-j3-jIm" id="L0A-qn-FzC"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="WZ8-gh-TKq" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="220" y="-1869"/>
+        </scene>
         <!--Klima Cam View Controller - Webcam-->
         <scene sceneID="6aT-XF-Pek">
             <objects>
@@ -1288,6 +1353,7 @@
         <image name="Webcam-1.png" width="23" height="30"/>
         <image name="archiv.png" width="30" height="30"/>
         <image name="ifgi.png" width="410" height="150"/>
+        <image name="overschmidt.jpg" width="119" height="91"/>
         <image name="wwu-full.png" width="410" height="150"/>
     </resources>
     <classes>
@@ -1332,6 +1398,13 @@
                 <relationship kind="outlet" name="temperaturLabel" candidateClass="UILabel"/>
                 <relationship kind="outlet" name="windgeschwindigkeit" candidateClass="UILabel"/>
                 <relationship kind="outlet" name="windrichtung" candidateClass="UILabel"/>
+            </relationships>
+        </class>
+        <class className="IpadInfoCamViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/IpadInfoCamViewController.h"/>
+            <relationships>
+                <relationship kind="action" name="closeView:"/>
+                <relationship kind="outlet" name="textview" candidateClass="UITextView"/>
             </relationships>
         </class>
         <class className="KlimaCamViewController" superclassName="UIViewController">
@@ -1404,6 +1477,7 @@
         <class className="WSGraphViewController" superclassName="UIViewController">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/WSGraphViewController.h"/>
             <relationships>
+                <relationship kind="action" name="doneButtonPressed:"/>
                 <relationship kind="action" name="infoPressed:"/>
             </relationships>
         </class>

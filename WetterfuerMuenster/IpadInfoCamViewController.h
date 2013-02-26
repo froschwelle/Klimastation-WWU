@@ -10,5 +10,6 @@
 
 @interface IpadInfoCamViewController : UIViewController
 @property (strong, nonatomic) IBOutlet UITextView *textview;
+- (IBAction)closeView:(id)sender;
 
 @end
